@@ -15,7 +15,8 @@ server.get('*', (req, res) => {
     meta: `
     <meta ...>
     <meta ...>
-  `
+  ` ,
+    url:req.url
   };
   createApp(context).then(app => {
     //renderer.renderToString(vm[, context], callback)
